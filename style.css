@@ -19,17 +19,14 @@
   height: 60px;
   background-color: #F3F3F3;
   padding: 0 20px;
-  border: 1px solid transparent;
   outline: none;
   border-bottom-left-radius: 30px;
   border-top-left-radius: 30px;
   flex-grow: 1;
+  border: none;
 }
 .header .search::placeholder {
   color: #B6B4B4;
-}
-.header .search:focus {
-  border: 1px solid #ECB907;
 }
 .header .user-icon {
   padding: 16px 8px;
@@ -38,6 +35,7 @@
   display: flex;
   cursor: pointer;
   flex-grow: 1;
+  border: 1px solid transparent;
 }
 .header .search-icon {
   display: flex;
@@ -48,17 +46,10 @@
   background-color: #E5E5E5;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
-  border: 1px solid transparent;
 }
-.header .activ-search .search,
-.header .activ-search .search-icon {
+.header .active-search {
   border: 1px solid #ECB907;
-}
-.header .activ-search .search {
-  border-right: none;
-}
-.header .activ-search .search-icon {
-  border-left: none;
+  border-radius: 30pxgit;
 }
 .header .content {
   display: flex;

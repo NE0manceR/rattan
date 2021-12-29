@@ -23,18 +23,14 @@ $main-yellow: #ECB907;
         height: 60px;
         background-color: #F3F3F3;
         padding: 0 20px;
-        border: 1px solid transparent;
         outline: none;
         border-bottom-left-radius: 30px;
         border-top-left-radius: 30px;
         flex-grow: 1;
+        border: none;
 
         &::placeholder {
             color: #B6B4B4;
-        }
-
-        &:focus {
-            border: 1px solid #ECB907;
         }
     }
 
@@ -46,6 +42,7 @@ $main-yellow: #ECB907;
         display: flex;
         cursor: pointer;
         flex-grow: 1;
+        border: 1px solid transparent;
     }
 
     .search-icon {
@@ -57,24 +54,11 @@ $main-yellow: #ECB907;
         background-color: #E5E5E5;
         border-bottom-right-radius: 30px;
         border-top-right-radius: 30px;
-        border: 1px solid transparent;
     }
 
-    .activ-search {
-
-        .search,
-        .search-icon {
-            border: 1px solid #ECB907;
-        }
-
-        .search {
-            border-right: none;
-        }
-
-        .search-icon {
-            border-left: none;
-        }
-
+    .active-search {
+        border: 1px solid #ECB907;
+        border-radius: 30pxgit ;
     }
 
     .content {

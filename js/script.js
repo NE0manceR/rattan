@@ -1,6 +1,6 @@
 //=====search====///
 function activeSearch() {
-    $('.search-wrap').addClass('activ-search');
+    $('.search-wrap').addClass('active-search');
     $('.search').focus();
     $('.search').attr('placeholder', '');
 }
@@ -10,6 +10,6 @@ $('.search').blur(() => {
         $('.search').attr('placeholder', 'Що ти шукаш?');
     }
 
-    $('.search-wrap').removeClass('activ-search');
+    $('.search-wrap').removeClass('active-search');
 });
 //=====search====///
