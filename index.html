@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="owl-slider/owl.carousel.min.css">
+  <link rel="stylesheet" href="owl-slider/owl.theme.default.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Rattan</title>
 </head>
@@ -14,28 +16,235 @@
     <a href="/">
       <img class="logo" src="images/logo.svg" alt="logo">
     </a>
-    <div class="content">
-      <div onclick="activeSearch()" class="search-wrap">
-        <input class="search" type="text" placeholder="Що ти шукаш?">
-        <div class="search-icon">
-          <img src="images/icons/ic_search.svg" alt="search">
+    <div class="header__content-wrap">
+      <div onclick="activeSearch()" class="search">
+        <input class="search__input" type="text" placeholder="Що ти шукаш?">
+        <div class="search__icon-wrap">
+          <img class="icon" src="images/icons/ic_search.svg" alt="search">
         </div>
       </div>
-      <div class="user-wrap">
-        <div class="icons-wrap">
-          <a class="user-icon" href="/"><img src="./images/icons/ic_car-header.svg" alt="car-icon"></a>
-          <a class="user-icon" href="/"><img src="./images/icons/ic_user-header.svg" alt="user-icon"></a>
-          <a class="user-icon" href="/"><img src="./images/icons/ic_cart-header.svg" alt="cart-icon"></a>
+      <div class="header__user-menu">
+        <div class="header__user-wrap user-menu">
+          <a class="user-menu__icon" href="/"><img class="icon" src="./images/icons/ic_car-header.svg"
+              alt="car-icon"></a>
+          <a class="user-menu__icon" href="/"><img class="icon" src="./images/icons/ic_user-header.svg"
+              alt="user-icon"></a>
+          <a class="user-menu__icon" href="/"><img class="icon" src="./images/icons/ic_cart-header.svg"
+              alt="cart-icon"></a>
         </div>
         <div class="lang-switch">
-          
+          UA
         </div>
       </div>
     </div>
   </header>
+  <nav class="navigation">
+    <div class="navigation_position">
+      <ul class="navigation__wrap">
+        <li class="navigation__btn">Товари</li>
+        <li class="navigation__btn">Новинки</li>
+        <li class="navigation__btn">Про авторів</li>
+        <li class="navigation__btn">Натхнення</li>
+        <li class="navigation__btn">Формальності</li>
+        <li class="navigation__btn">Контакти</li>
+      </ul>
+      <div class="navigation__contacts">
+        <a class="navigation__link" target="_blank" href="https://goo.gl/maps/AyfyZEyAHAoypbwz9">м. Львів, вул.
+          Гайдамацька, 33</a>
+        <span class="navigation__link">|</span>
+        <a class="navigation__link" href="tel:+380976985588">+38 097 698 55 88</a>
+      </div>
+    </div>
+  </nav>
 
-  <script src="./js/jquery-3.6.0.min.js"></script>
-  <script src="./js/script.js"></script>
+  <section class="slider-wrap">
+    <div class="top-title-wrap">
+      <h3 class="block-title">Топ продажів</h3>
+      <img class="title-star" src="images/stars.svg" alt="img">
+    </div>
+    <div class="owl-carousel">
+    </div>
+  </section>
+
+  <section class="slider-wrap">
+    <div class="top-title-wrap">
+      <h3 class="block-title">Товари зі знижкою</h3>
+    </div>
+    <div class="owl-carousel">
+    </div>
+  </section>
+
+  <section class="best">
+    <h3 class="best__title">Все найкраще для вас</h3>
+    <div class="best__card-wrap">
+      <div class="best__card card">
+        <div class="card__title-wrap">
+          <div class="card__number">1</div>
+          <h4 class="card__title">Якість продукції</h4>
+        </div>
+        <span class="card__text">
+          Щодня ми працюємо, щоб задовільнити Ваші потреби. Саме завдяки відгукам та коментарям наших клієнтів, ми
+          стаємо кращими
+        </span>
+      </div>
+      <div class="best__card card">
+        <div class="card__title-wrap">
+          <div class="card__number">2</div>
+          <h4 class="card__title">Довготривалість</h4>
+        </div>
+        <span class="card__text">
+          Щодня ми працюємо, щоб задовільнити Ваші потреби. Саме завдяки відгукам та коментарям наших клієнтів, ми
+          стаємо кращими
+        </span>
+      </div>
+      <div class="best__card card">
+        <div class="card__title-wrap">
+          <div class="card__number">3</div>
+          <h4 class="card__title">Стильний дизайн</h4>
+        </div>
+        <span class="card__text">
+          Щодня ми працюємо, щоб задовільнити Ваші потреби. Саме завдяки відгукам та коментарям наших клієнтів, ми
+          стаємо кращими
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="inspiration">
+    <h3 class="block-title">Топ продажів</h3>
+
+    <div class="inspiration__card-wrap">
+      <a href="/" class="inspiration-card inspiration-card_color">
+        <img class="inspiration-card__img" src="images/inspiration-img.png" alt="img">
+        <div class="inspiration-card__text-wrap">
+          <h4 class="inspiration-card__title">Комбінації меблів</h4>
+          <span class="inspiration-card__text">Наші поради це економія на дизайнерах</span>
+        </div>
+        <div class="arrow inspiration-card__arrow"></div>
+      </a>
+
+      <a href="/" class="inspiration-card inspiration-card_color">
+        <img class="inspiration-card__img" src="images/inspiration-img.png" alt="img">
+        <div class="inspiration-card__text-wrap">
+          <h4 class="inspiration-card__title">Комбінації меблів</h4>
+          <span class="inspiration-card__text">Наші поради це економія на дизайнерах</span>
+        </div>
+        <div class="arrow inspiration-card__arrow"></div>
+      </a>
+
+      <a href="/" class="inspiration-card inspiration-card_color">
+        <img class="inspiration-card__img" src="images/inspiration-img.png" alt="img">
+        <div class="inspiration-card__text-wrap">
+          <h4 class="inspiration-card__title">Комбінації меблів</h4>
+          <span class="inspiration-card__text">Наші поради це економія на дизайнерах</span>
+        </div>
+        <div class="arrow inspiration-card__arrow"></div>
+      </a>
+    </div>
+
+  </section>
+
+  <section class="services">
+    <a class="services-card" href="/">
+      <img class="icon" src="images/icons/ic_car-services.svg" alt="img">
+      <h4 class="services-card__title">Послуги доставки</h4>
+      <span class="services-card__text">Обирай зручний для тебе варіант</span>
+      <span class="services-card__text">Дізнатись більше</span>
+    </a>
+
+    <a class="services-card" href="/">
+      <img class="icon" src="images/icons/ic_house-services.svg" alt="img">
+      <h4 class="services-card__title">Самовивіз</h4>
+      <span class="services-card__text">Швидка, пракична та доступна послуга</span>
+      <span class="services-card__text">Дізнатись більше</span>
+    </a>
+
+    <a class="services-card" href="/">
+      <img class="icon" src="images/icons/ic_card-services.svg" alt="img">
+      <h4 class="services-card__title">Способи оплати</h4>
+      <span class="services-card__text">Оплата онлайн та інформація про оплату частинами</span>
+      <span class="services-card__text">Дізнатись більше</span>
+    </a>
+
+  </section>
+
+  <section class="slider-wrap">
+
+    <div class="top-title-wrap">
+      <h3 class="block-title">Товари зі знижкою</h3>
+    </div>
+    <div class="owl-carousel">
+    </div>
+
+  </section>
+
+  <section class="feedback">
+
+    <div class="top-title-wrap">
+      <h3 class="block-title">Відгуки</h3>
+    </div>
+    <div class="feedback__card-wrap">
+      <div class="feedback-card">
+        <span class="feedback-card__name">Людмила, Київ</span>
+        <span class="feedback-card__text">
+          Щодня ми працюємо, щоб задовільнити Ваші потреби. Саме завдяки відгукам
+          та коментарям наших клієнтів, ми стаємо щоразу кращими
+        </span>
+        <a class="feedback-card__all" href="/">
+          <div class="arrow feedback-card__arrow"></div>
+          <span>Всі відгуки</span>
+        </a>
+        <span class="feedback-card__date">11.05.2021</span>
+      </div>
+      <div class="feedback-card">
+        <span class="feedback-card__name">Людмила, Київ</span>
+        <span class="feedback-card__text">
+          Висловлюю щирі слова вдячності всім хто приймав участь у виготовленні та доставці мого замовлення. Крісло дуже
+          пасує до інтер’єру, гарне та неймовірно зручне.
+          З найкращими побажаннями,
+          Людмила.
+        </span>
+        <a class="feedback-card__all" href="/">
+          <div class="arrow feedback-card__arrow"></div>
+          <span>Всі відгуки</span>
+        </a>
+        <span class="feedback-card__date">11.05.2021</span>
+      </div>
+      <div class="feedback-card">
+        <span class="feedback-card__name">Інна, Львів</span>
+        <span class="feedback-card__text">
+          Замовляли крісло на подарунок доньці в кімнату. Вона в нас полюбляє пастельні кольори тому хотілося чогось
+          ніжного, легкого.
+          Менеджер порадив обрати крісло Леді.
+          Замовлення швидко доставили, що каже про оперативність кур'єрів й налагодженість. Крісло дуже елегантне,
+          чудово пасує до інтер'єру кімнати. Дякую!
+        </span>
+        <a class="feedback-card__all" href="/">
+          <div class="arrow feedback-card__arrow"></div>
+          <span>Всі відгуки</span>
+        </a>
+        <span class="feedback-card__date">11.05.2021</span>
+      </div>
+      <div class="feedback-card">
+        <span class="feedback-card__name">Катерина, Моршин</span>
+        <span class="feedback-card__text">
+          Исполнили мечту нашей доченьки - приобрели ей ко дню рождения кресло кокон! Ребенок просто в восторге,
+          невероятно счастлива! Благодарим за Ваш труд и старания.
+          Процветания и крупных продаж :)
+        </span>
+        <a class="feedback-card__all" href="/">
+          <div class="arrow feedback-card__arrow"></div>
+          <span>Всі відгуки</span>
+        </a>
+        <span class="feedback-card__date">11.05.2021</span>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="owl-slider/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
