@@ -48,7 +48,7 @@ function setSliderItems(count) {
         }
 
         let x = `
-        <div class="slider-item ${photoIndex % 2 === 0 ? 'top' : ''}">
+        <div class="slider-item item ${photoIndex % 2 === 0 ? 'top' : ''}">
         <img class="slider-img" src="images/test-slider-photo/${photoIndex}.png" alt="img">
         <span class="slider-text">Модульн  комплект комплект комплект комплект  Ментор CRUZO <span>штучний ротанг, сірий, dm0011</span></span>
         <div class="slider-price-wrap">
@@ -63,6 +63,7 @@ function setSliderItems(count) {
       </div>
         `
         $('.item-slider').append(x);
+        $('.item-wrap').append(x);
     }
 }
 setSliderItems(20);
@@ -70,4 +71,13 @@ setSliderItems(20);
 
 function myFunction() {
     console.log('wewewe')
+}
+
+
+function filterAnimate() {
+    $('.filter__btn-wrap').scrollLeft(343)
+
+    setTimeout(() => {
+        $('.filter__btn-wrap').scrollLeft(0)
+    }, 1000)
 }

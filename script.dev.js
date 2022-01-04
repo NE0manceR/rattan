@@ -40,8 +40,9 @@ function setSliderItems(count) {
       photoIndex = 1;
     }
 
-    var x = "\n        <div class=\"slider-item ".concat(photoIndex % 2 === 0 ? 'top' : '', "\">\n        <img class=\"slider-img\" src=\"images/test-slider-photo/").concat(photoIndex, ".png\" alt=\"img\">\n        <span class=\"slider-text\">\u041C\u043E\u0434\u0443\u043B\u044C\u043D  \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442 \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442 \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442 \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442  \u041C\u0435\u043D\u0442\u043E\u0440 CRUZO <span>\u0448\u0442\u0443\u0447\u043D\u0438\u0439 \u0440\u043E\u0442\u0430\u043D\u0433, \u0441\u0456\u0440\u0438\u0439, dm0011</span></span>\n        <div class=\"slider-price-wrap\">\n          <div class=\"slider-info\">\n            <button class=\"slider-btn\">\u0417\u0430\u043C\u043E\u0432\u0438\u0442\u0438</button>\n            <div class=\"slider-price\">\n              <span class=\"slider-sale\">10 500 \u0433\u0440\u043D</span>\n              <span class=\"slider-main-price\">3 500 <span class=\"slider-main-value\">\u0433\u0440\u043D</span></span>\n            </div>\n          </div>\n        </div>\n      </div>\n        ");
+    var x = "\n        <div class=\"slider-item item ".concat(photoIndex % 2 === 0 ? 'top' : '', "\">\n        <img class=\"slider-img\" src=\"images/test-slider-photo/").concat(photoIndex, ".png\" alt=\"img\">\n        <span class=\"slider-text\">\u041C\u043E\u0434\u0443\u043B\u044C\u043D  \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442 \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442 \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442 \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442  \u041C\u0435\u043D\u0442\u043E\u0440 CRUZO <span>\u0448\u0442\u0443\u0447\u043D\u0438\u0439 \u0440\u043E\u0442\u0430\u043D\u0433, \u0441\u0456\u0440\u0438\u0439, dm0011</span></span>\n        <div class=\"slider-price-wrap\">\n          <div class=\"slider-info\">\n            <button class=\"slider-btn\">\u0417\u0430\u043C\u043E\u0432\u0438\u0442\u0438</button>\n            <div class=\"slider-price\">\n              <span class=\"slider-sale\">10 500 \u0433\u0440\u043D</span>\n              <span class=\"slider-main-price\">3 500 <span class=\"slider-main-value\">\u0433\u0440\u043D</span></span>\n            </div>\n          </div>\n        </div>\n      </div>\n        ");
     $('.item-slider').append(x);
+    $('.item-wrap').append(x);
   }
 }
 
@@ -49,4 +50,11 @@ setSliderItems(20);
 
 function myFunction() {
   console.log('wewewe');
+}
+
+function filterAnimate() {
+  $('.filter__btn-wrap').scrollLeft(343);
+  setTimeout(function () {
+    $('.filter__btn-wrap').scrollLeft(0);
+  }, 1000);
 }
