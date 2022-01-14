@@ -47,7 +47,7 @@ function setSliderItems(count) {
             photoIndex = 1;
         }
 
-        let x = `
+        let card = `
         <div class="slider-item item ${photoIndex % 2 === 0 ? 'top' : ''}">
         <img class="slider-img" src="images/test-slider-photo/${photoIndex}.png" alt="img">
         <span class="slider-text">Модульн  комплект комплект комплект комплект  Ментор CRUZO <span>штучний ротанг, сірий, dm0011</span></span>
@@ -62,8 +62,25 @@ function setSliderItems(count) {
         </div>
       </div>
         `
-        $('.item-slider').append(x);
-        $('.item-wrap').append(x);
+
+        let newCard = `
+        <div class="slider-item item top new">
+        <img class="slider-img" src="images/test-slider-photo/${photoIndex}.png" alt="img">
+        <span class="slider-text">Модульн  комплект комплект комплект комплект  Ментор CRUZO <span>штучний ротанг, сірий, dm0011</span></span>
+        <div class="slider-price-wrap">
+          <div class="slider-info">
+            <button class="slider-btn">Замовити</button>
+            <div class="slider-price">
+              <span class="slider-sale">10 500 грн</span>
+              <span class="slider-main-price">3 500 <span class="slider-main-value">грн</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+        `
+        $('.home-slider').append(card);
+        $('.item-wrap').append(card);
+        $('.item-new').append(newCard);
     }
 }
 setSliderItems(20);

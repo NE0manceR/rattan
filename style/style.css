@@ -14,11 +14,6 @@
   src: url("../fonts/Roboto-Black.ttf");
   font-weight: 900;
 }
-html,
-body {
-  overflow-x: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -296,10 +291,10 @@ body {
 }
 
 .slider-wrap {
-  max-width: 1600px;
   margin: 0 auto;
   padding: 54px 0 0 16px;
   margin-bottom: 124px;
+  overflow: hidden;
 }
 @media (max-width: 1100px) {
   .slider-wrap {
@@ -476,11 +471,14 @@ body {
   }
 }
 
+.best-bcg {
+  background-color: #F5F5F5;
+}
+
 .best {
   max-width: 1600px;
   margin: 0 auto;
   padding: 60px 16px 128px;
-  background-color: #F5F5F5;
 }
 @media (max-width: 1050px) {
   .best {
@@ -555,10 +553,11 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   padding: 125px 16px 180px 16px;
+  overflow: hidden;
 }
 @media (max-width: 600px) {
   .inspiration {
-    padding: 75px 16px 127px 16px;
+    padding: 75px 0 127px 16px;
   }
 }
 .inspiration__card-wrap {
@@ -707,6 +706,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   padding: 80px 16px;
+  overflow: hidden;
 }
 @media (max-width: 600px) {
   .feedback {
@@ -912,7 +912,11 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  overflow-x: scroll;
+}
+@media (max-width: 900px) {
+  .filter__btn-wrap {
+    overflow-x: scroll;
+  }
 }
 
 .item-wrap {
@@ -1030,4 +1034,64 @@ body {
   .blog__title {
     font-size: 28px;
   }
+}
+
+.inspiration-detail {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 80px 16px;
+}
+.inspiration-detail__main .inspiration-card {
+  width: 100%;
+}
+.inspiration-detail__main .inspiration-card__img {
+  width: 100%;
+  object-fit: cover;
+}
+.inspiration-detail__main .inspiration-card__arrow {
+  transform: rotate(180deg);
+}
+.inspiration-detail__text-block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+@media (max-width: 800px) {
+  .inspiration-detail__text-block {
+    flex-direction: column;
+  }
+}
+.inspiration-detail__text-right, .inspiration-detail__text-left {
+  width: 45%;
+}
+@media (max-width: 800px) {
+  .inspiration-detail__text-right, .inspiration-detail__text-left {
+    width: 100%;
+  }
+}
+.inspiration-detail__title {
+  display: block;
+  margin-bottom: 42px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #262121;
+}
+.inspiration-detail__text {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  color: #262121;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.new::before {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  padding: 10px 14px;
+  content: "Новинка";
+  background-color: #ECB907;
+  font-weight: 700;
+  color: #FFFFFF;
 }

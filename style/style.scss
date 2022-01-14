@@ -26,7 +26,7 @@ $slider-item-media: 600px;
 
 html,
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 * {
@@ -312,10 +312,10 @@ body {
 }
 
 .slider-wrap {
-  max-width: 1600px;
   margin: 0 auto;
   padding: 54px 0 0 16px;
   margin-bottom: 124px;
+  overflow: hidden;
 
   @media (max-width: 1100px) {
     padding: 34px 0 0 16px;
@@ -480,11 +480,14 @@ body {
   }
 }
 
+.best-bcg {
+  background-color: #F5F5F5;
+}
+
 .best {
   max-width: 1600px;
   margin: 0 auto;
   padding: 60px 16px 128px;
-  background-color: #F5F5F5;
 
   @media (max-width: 1050px) {
     padding: 60px 16px 16px;
@@ -565,9 +568,10 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   padding: 125px 16px 180px 16px;
+  overflow: hidden;
 
   @media (max-width: 600px) {
-    padding: 75px 16px 127px 16px;
+    padding: 75px 0 127px 16px;
 
   }
 
@@ -719,6 +723,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   padding: 80px 16px;
+  overflow: hidden;
 
   @media (max-width: 600px) {
     padding: 40px 16px;
@@ -941,7 +946,10 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    overflow-x: scroll;
+
+    @media (max-width: 900px) {
+      overflow-x: scroll;
+    }
   }
 }
 
@@ -1056,8 +1064,6 @@ body {
     }
   }
 
-
-
   &__title {
     font-size: 48px;
     font-weight: 700;
@@ -1067,4 +1073,75 @@ body {
       font-size: 28px;
     }
   }
+}
+
+
+.inspiration-detail {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 80px 16px;
+
+  &__main {
+
+    .inspiration-card {
+      width: 100%;
+
+      &__img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      &__arrow {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  &__text-right,
+  &__text-left {
+    width: 45%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 42px;
+    font-size: 24px;
+    font-weight: 700;
+    color: $main-black;
+  }
+
+  &__text {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    color: $main-black;
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+}
+
+
+.new::before {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  padding: 10px 14px;
+  content: "Новинка";
+  background-color: $main-yellow;
+  font-weight: 700;
+  color: #FFFFFF;
 }
