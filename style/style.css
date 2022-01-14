@@ -1095,3 +1095,33 @@
   font-weight: 700;
   color: #FFFFFF;
 }
+
+.about {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 80px 16px;
+}
+.about__article-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+.about__article-text-wrap {
+  padding: 64px;
+  border: 1px solid black;
+  max-width: 49%;
+}
+.about__article-text {
+  font-size: 16px;
+  color: #676464;
+  line-height: 26px;
+}
+.about__article {
+  display: flex;
+  justify-content: space-between;
+}
+.about__article-img {
+  min-height: 680px;
+  max-width: 49%;
+  object-fit: cover;
+}

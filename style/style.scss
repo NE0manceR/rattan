@@ -1145,3 +1145,40 @@ body {
   font-weight: 700;
   color: #FFFFFF;
 }
+
+.about {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 80px 16px;
+
+  &__article {}
+
+  &__article-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 36px;
+  }
+
+  &__article-text-wrap {
+    padding: 64px;
+    border: 1px solid black ;
+    max-width: 49%;
+  }
+
+  &__article-text {
+    font-size: 16px;
+    color: #676464;
+    line-height: 26px;
+  }
+
+  &__article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__article-img {
+    min-height: 680px;
+    max-width: 49%;
+    object-fit: cover;
+  }
+}
