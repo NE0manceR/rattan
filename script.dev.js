@@ -50,13 +50,31 @@ function setSliderItems(count) {
 
 setSliderItems(20);
 
-function myFunction() {
-  console.log('wewewe');
-}
-
 function filterAnimate() {
   $('.filter__btn-wrap').scrollLeft(343);
   setTimeout(function () {
     $('.filter__btn-wrap').scrollLeft(0);
   }, 1000);
 }
+
+$(window).on('resize', function () {
+  setFormalitiesImg();
+});
+
+function setFormalitiesImg() {
+  var height = $(window).width() - 32;
+
+  if (height <= 1050) {
+    $('.formalities__img').css('height', "".concat(height, "px"));
+  } else {
+    $('.formalities__img').css('height', 'auto');
+  }
+}
+
+setFormalitiesImg();
+var swiper = new Swiper(".mySwiper", {
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true
+  }
+});
