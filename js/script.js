@@ -128,6 +128,18 @@ function setDetailImg() {
 setFormalitiesImg();
 setDetailImg();
 
+$('.navigation__items').on('click', () => {
+  $('.menu').fadeIn();
+})
+
+
+$('.menu__close-ic').on('click', closeMenu)
+
+function closeMenu() {
+  $('.menu').fadeOut();
+
+}
+
 $('.detail__img').on('click', () => {
   $('.detail__big-slider-wrap').fadeIn();
 })
