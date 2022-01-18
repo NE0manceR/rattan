@@ -95,7 +95,8 @@ function filterAnimate() {
 }
 
 $(window).on('resize', () => {
-  setFormalitiesImg()
+  setFormalitiesImg();
+  setDetailImg();
 })
 
 
@@ -107,10 +108,33 @@ function setFormalitiesImg() {
   } else {
     $('.formalities__img').css('height', 'auto')
   }
+}
+
+function setDetailImg() {
+  const detailHeight = $('.detail__img').width();
+  const detailsliderHeight = $('.detail__slider').width();
+
+
+  setTimeout(() => {
+    $('.detail__img').css('height', `${detailHeight}px`);
+    $('.detail__slider').css('height', `${detailsliderHeight}px`);
+    $('.detail__slider-img').css('height', `${detailsliderHeight - 50}px`);
+
+    // $('.swiper-slide-active').css('height', `${detailsliderHeight - 150}px`);
+  }, 200)
 
 }
 
-setFormalitiesImg()
+setFormalitiesImg();
+setDetailImg();
+
+$('.detail__img').on('click', () => {
+  $('.detail__big-slider-wrap').fadeIn();
+})
+
+$('.detail__close-ic').on('click', () => {
+  $('.detail__big-slider-wrap').fadeOut();
+})
 
 let swiper = new Swiper(".mySwiper", {
   scrollbar: {
@@ -118,3 +142,23 @@ let swiper = new Swiper(".mySwiper", {
     hide: true,
   },
 });
+
+let bigSlider = new Swiper(".detail__big-slider", {
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
+
+  navigation: {
+    nextEl: ".detail__button-next",
+    prevEl: ".detail__button-prev"
+  },
+});
+
+
+$(".color__img").on('click', (e) => {
+  $(".color__img").removeClass('active');
+  $(e.target).addClass('active');
+  console.log(e.target);
+
+})
