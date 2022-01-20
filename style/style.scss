@@ -43,6 +43,8 @@ body {
   font-family: 'Roboto', 'san-serif';
   text-decoration: none;
   scroll-behavior: smooth;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header {
@@ -933,20 +935,137 @@ body {
     @media (max-width: 850px) {
       display: none;
     }
-
   }
 
   &__btn {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 8px;
     padding: 10px 16px;
     border-radius: 16px;
     font-size: 12px;
-    border: none;
+    border: 1px solid transparent;
     font-weight: 700;
     cursor: pointer;
     flex-shrink: 0;
+    background-color: #F3F3F3;
+    transition: 0.3s;
+    user-select: none;
+
+    &.active-btn {
+      color: white;
+      background-color: $main-black;
+
+      .filter__btn-icon {
+        background: url('../images/icons/ic_dorop-down-arrow-white.svg') no-repeat;
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &__btn-checket {
+    border-color: $main-black;
+  }
+
+  &__btn-icon {
+    background: url('../images/icons/ic_dorop-down-arrow.svg') no-repeat;
+    width: 12px;
+    height: 8px;
+    transition: 0.3s;
+  }
+
+  &__btn-color {
+    color: 646060;
+    font-weight: 400;
+  }
+
+  &__item-container {
+    position: absolute;
+    display: none;
+    top: 34px;
+    left: 0;
+    z-index: 6;
+    padding-top: 20px;
+
+    @media (max-width: 700px) {
+      padding-top: 0;
+    }
+  }
+
+  &__item-mobile-container {
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 100;
+    // top: 357px;
+    // overflow: scroll;
+    // padding: 30px 0 100px;
+    background-color: white;
+    top: 0;
+    height: 100vh;
+  }
+
+  &__input-checkbox {
+    display: none;
+  }
+
+  &__item-wrap {
+    padding: 30px 20px;
+    background: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    max-height: 400px;
+    overflow-y: scroll;
+
+    @media (max-width: 700px) {
+      max-height: 100vh;
+      top: 0;
+    }
+
+    &::-webkit-scrollbar {
+      background-color: #F3F3F3;
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $main-yellow;
+    }
+
+    @media (max-width: 600px) {
+      box-shadow: none;
+    }
+  }
+
+  &__check-box-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    user-select: none;
+
+    @media (max-width: 900px) {
+      justify-content: space-between;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__check-box-title {
+    margin-right: 40px;
+    white-space: nowrap;
+  }
+
+  &__check-box {
+    width: 22px;
+    height: 22px;
+    border: 1px solid $main-black;
+  }
+
+  & .active {
+    background: url('../images/check-box-icon.svg') no-repeat;
+    background-position: center;
+    background-color: $main-black;
   }
 
   &__btn-wrap {
@@ -1081,7 +1200,6 @@ body {
     }
   }
 }
-
 
 .inspiration-detail {
   max-width: 1600px;
@@ -2056,4 +2174,8 @@ body {
     padding-right: 10px;
     margin-right: 12px;
   }
+}
+
+.fix-body {
+  overflow: hidden;
 }
