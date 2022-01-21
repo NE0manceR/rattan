@@ -993,17 +993,79 @@ body {
     }
   }
 
+  &__close-menu {
+    position: fixed;
+    align-items: center;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+
+    img {
+      padding: 20px;
+    }
+  }
+
+  &__mobile-btn-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  }
+
   &__item-mobile-container {
     position: fixed;
     display: block;
     width: 100%;
     z-index: 100;
-    // top: 357px;
-    // overflow: scroll;
-    // padding: 30px 0 100px;
     background-color: white;
     top: 0;
     height: 100vh;
+
+    .filter__item-wrap {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      max-height: 100%;
+      box-shadow: none;
+    }
+
+    .filter__close-menu {
+      display: flex;
+    }
+
+    .filter__mobile-btn-wrap {
+      display: flex;
+    }
+  }
+
+  &__mobile-btn-show,
+  &__mobile-btn-clear {
+    width: 146px;
+    border-radius: 16px;
+    font-size: 12px;
+    padding: 12px 0;
+    border: none;
+    outline: none;
+  }
+
+  &__mobile-btn-clear {
+    color: rgba(38, 33, 33, 0.7);
+  }
+
+  &__mobile-btn-show {
+    color: white;
+    background-color: $main-black;
+    border: none;
   }
 
   &__input-checkbox {
@@ -1011,6 +1073,7 @@ body {
   }
 
   &__item-wrap {
+    position: relative;
     padding: 30px 20px;
     background: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
@@ -1039,6 +1102,7 @@ body {
   &__check-box-wrap {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 40px;
     user-select: none;
 

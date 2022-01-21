@@ -11,7 +11,7 @@
   <title>Rattan</title>
 </head>
 
-<body onload="filterAnimate()">
+<body class="body" onload="filterAnimate()">
 
   <header class="header">
     <a class="logo-wrap" href="/">
@@ -69,263 +69,261 @@
 
     <form class="filter__btn-wrap">
       <span class="filter__text">Фільтрувати за:</span>
-      <div class="filter__btn" type="button">
+      <div id="filter__brand" class="filter__btn" type="button">
         Бренд
         <div class="filter__btn-icon"></div>
-        <div class="filter__item-container">
-          <div class="filter__item-wrap">
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
-              <span class="filter__check-box-title">БРЕНД 1</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand2" name="brand2">
-              <span class="filter__check-box-title">БРЕНД 2</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-          </div>
-        </div>
       </div>
 
-      <div class="filter__btn" type="button">
+      <div id="filter__material" class="filter__btn" type="button">
         Матеріал каркасу
         <div class="filter__btn-icon"></div>
-        <div class="filter__item-container">
-          <div class="filter__item-wrap">
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
-              <span class="filter__check-box-title">БРЕНД 1</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand2" name="brand2">
-              <span class="filter__check-box-title">БРЕНД 2</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 7</span>
-              <div class="filter__check-box"></div>
-            </div>
-          </div>
-        </div>
       </div>
 
-      <div class="filter__btn" type="button">
+      <div id="filter__color" class="filter__btn" type="button">
         Колір
         <div class="filter__btn-icon"></div>
-        <div class="filter__item-container">
-          <div class="filter__item-wrap">
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
-              <span class="filter__check-box-title">БРЕНД 1</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand2" name="brand2">
-              <span class="filter__check-box-title">БРЕНД 2</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-          </div>
-        </div>
-
       </div>
-      <div class="filter__btn" type="button">
+      <div id="filter__long" class="filter__btn" type="button">
         Довжина
         <div class="filter__btn-icon"></div>
-        <div class="filter__item-container">
-          <div class="filter__item-wrap">
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
-              <span class="filter__check-box-title">БРЕНД 1</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand2" name="brand2">
-              <span class="filter__check-box-title">БРЕНД 2</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 7</span>
-              <div class="filter__check-box"></div>
-            </div>
-          </div>
-        </div>
-
       </div>
-      <div class="filter__btn" type="button">
+      <div id="filter__width" class="filter__btn" type="button">
         Ширина
         <div class="filter__btn-icon"></div>
-        <div class="filter__item-container">
-          <div class="filter__item-wrap">
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
-              <span class="filter__check-box-title">БРЕНД 1</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand2" name="brand2">
-              <span class="filter__check-box-title">БРЕНД 2</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 3</span>
-              <div class="filter__check-box"></div>
-            </div>
-            <div class="filter__check-box-wrap">
-              <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
-              <span class="filter__check-box-title">БРЕНД 7</span>
-              <div class="filter__check-box"></div>
+      </div>
+      <div class="filter__btn" type="button">
+        Очистити все
+      </div>
+
+      <div id='filter__brand-item' class="filter__item-container">
+        <div class="filter__item-wrap">
+          <div class="filter__close-menu">
+            <img class="filter__close-menu-ic" src="images/ic_close-menu.svg" alt="img">
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">First element</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand2" name="brand2">
+            <span class="filter__check-box-title">БРЕНД 2</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
+            <span class="filter__check-box-title">Last element</span>
+            <div class="filter__check-box">
             </div>
           </div>
         </div>
 
+        <div class="filter__mobile-btn-wrap">
+          <button type='button' class="filter__mobile-btn-clear">Очистити все</button>
+          <button type='button' class="filter__mobile-btn-show">Дивитись</button>
+        </div>
       </div>
-      <div class="filter__btn filter__btn-color" type="button">
-        Очистити все
+
+      <div id='filter__material-item' class="filter__item-container">
+        <div class="filter__item-wrap ">
+          <div class="filter__close-menu">
+            <img class="filter__close-menu-ic" src="images/ic_close-menu.svg" alt="img">
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand2" name="brand2">
+            <span class="filter__check-box-title">БРЕНД 2</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
+            <span class="filter__check-box-title">БРЕНД 3</span>
+            <div class="filter__check-box"></div>
+          </div>
+        </div>
+        <div class="filter__mobile-btn-wrap">
+          <button type='button' class="filter__mobile-btn-clear">Очистити все</button>
+          <button type='button' class="filter__mobile-btn-show">Дивитись</button>
+        </div>
+        <div class="filter__mobile-btn-wrap">
+          <button type='button' class="filter__mobile-btn-clear">Очистити все</button>
+          <button type='button' class="filter__mobile-btn-show">Дивитись</button>
+        </div>
+      </div>
+
+      <div id='filter__color-item' class="filter__item-container">
+        <div class="filter__item-wrap ">
+          <div class="filter__close-menu">
+            <img class="filter__close-menu-ic" src="images/ic_close-menu.svg" alt="img">
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand2" name="brand2">
+            <span class="filter__check-box-title">БРЕНД 2</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
+            <span class="filter__check-box-title">БРЕНД 3</span>
+            <div class="filter__check-box"></div>
+          </div>
+        </div>
+        <div class="filter__mobile-btn-wrap">
+          <button type='button' class="filter__mobile-btn-clear">Очистити все</button>
+          <button type='button' class="filter__mobile-btn-show">Дивитись</button>
+        </div>
+      </div>
+
+      <div id='filter__long-item' class="filter__item-container">
+        <div class="filter__item-wrap ">
+          <div class="filter__close-menu">
+            <img class="filter__close-menu-ic" src="images/ic_close-menu.svg" alt="img">
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand2" name="brand2">
+            <span class="filter__check-box-title">БРЕНД 2</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
+            <span class="filter__check-box-title">БРЕНД 3</span>
+            <div class="filter__check-box"></div>
+          </div>
+        </div>
+        <div class="filter__mobile-btn-wrap">
+          <button type='button' class="filter__mobile-btn-clear">Очистити все</button>
+          <button type='button' class="filter__mobile-btn-show">Дивитись</button>
+        </div>
+      </div>
+
+      <div id='filter__width-item' class="filter__item-container">
+        <div class="filter__item-wrap ">
+          <div class="filter__close-menu">
+            <img class="filter__close-menu-ic" src="images/ic_close-menu.svg" alt="img">
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand1" name="brand1">
+            <span class="filter__check-box-title">БРЕНД 1</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand2" name="brand2">
+            <span class="filter__check-box-title">БРЕНД 2</span>
+            <div class="filter__check-box"></div>
+          </div>
+          <div class="filter__check-box-wrap">
+            <input class="filter__input-checkbox" type="checkbox" id="brand3" name="brand3">
+            <span class="filter__check-box-title">БРЕНД 3</span>
+            <div class="filter__check-box"></div>
+          </div>
+        </div>
+        <div class="filter__mobile-btn-wrap">
+          <button type='button' class="filter__mobile-btn-clear">Очистити все</button>
+          <button type='button' class="filter__mobile-btn-show">Дивитись</button>
+        </div>
       </div>
     </form>
   </div>
